@@ -1,0 +1,35 @@
+{
+    "workload_experiments": [
+        {
+            "profile": "Low Load",
+            "throughput": 9.92,
+            "avg_latency": 0.76,
+            "max_latency": 1.22,
+            "spark_cpu": 19.46,
+            "spark_mem": 1571.84
+        },
+        {
+            "profile": "Medium Load",
+            "throughput": 92.57,
+            "avg_latency": 1.52,
+            "max_latency": 2.28,
+            "spark_cpu": 0.22,
+            "spark_mem": 2007.04
+        },
+        {
+            "profile": "High Load",
+            "throughput": 249.15,
+            "avg_latency": 2.28,
+            "max_latency": 3.53,
+            "spark_cpu": 2.06,
+            "spark_mem": 1631.232
+        }
+    ],
+    "recovery_experiment": {
+        "checkpoint_directory": "checkpoints/supply_chain",
+        "semantic_guarantee": "At-Least-Once / Effectively-Once",
+        "failure_behavior": "Deterministic offset commit log replay",
+        "recovery_time_seconds": 2.14,
+        "data_loss_rate": "0.0%"
+    }
+}

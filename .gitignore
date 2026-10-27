@@ -1,0 +1,21 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# Environment Secrets
+.env
+
+# Spark Checkpoint State (Large temporary recovery logs)
+checkpoints/
+
+# System and OS Files
+.DS_Store
+Thumbs.db
+*.log
